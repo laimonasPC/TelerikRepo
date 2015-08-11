@@ -12,7 +12,10 @@
     "1",
     "2"
   ],
-  "iOSBackgroundMode": [],
+  "iOSBackgroundMode": [
+    "location",
+    "remote-notification"
+  ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
   "FrameworkVersion": "3.7.0",
   "AndroidPermissions": [
@@ -43,6 +46,8 @@
     "ID_RESOLUTION_HD720P"
   ],
   "CorePlugins": [
+    "org.apache.cordova.camera",
     "org.apache.cordova.network-information"
-  ]
+  ],
+  "iOSDeploymentTarget": "8.0"
 }
