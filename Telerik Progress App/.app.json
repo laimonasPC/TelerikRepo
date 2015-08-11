@@ -1,4 +1,52 @@
 {
   "type": "kendo-ui-mobile",
-  "isNew": true
+  "views": [
+    {
+      "type": "view",
+      "components": [],
+      "name": "home",
+      "title": "Home",
+      "addToNavigation": true,
+      "icon": "home"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "list",
+          "name": "dataListViewModel",
+          "dataProvider": "telerikBackEndService",
+          "collection": "dbo_Bills",
+          "iconField": false,
+          "headerField": "Description",
+          "subHeaderField": "Amount",
+          "masterDetails": true,
+          "detailHeaderField": "Amount",
+          "detailSubHeaderField": "Description",
+          "detailDescriptionField": "Status",
+          "pullToRefresh": true,
+          "endlessScroll": false
+        }
+      ],
+      "name": "dataListView",
+      "title": "Data List",
+      "addToNavigation": true,
+      "icon": "organize"
+    }
+  ],
+  "dataProviders": [
+    {
+      "type": "dataProvider",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "name": "telerikBackEndService",
+      "title": "TelerikApp / TelerikBackEnd Service",
+      "source": "everlive",
+      "everliveKey": "g5zJhY8aWTeLIbJp",
+      "offlineStorage": true
+    }
+  ],
+  "name": "kendoUiMobileApp",
+  "navigation": "drawer",
+  "view": "home",
+  "skin": "flat"
 }
