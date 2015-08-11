@@ -57,6 +57,14 @@
       "title": "About",
       "addToNavigation": true,
       "icon": "info"
+    },
+    {
+      "type": "view",
+      "components": [],
+      "name": "homeView",
+      "title": "Location",
+      "addToNavigation": true,
+      "icon": "search"
     }
   ],
   "dataProviders": [
