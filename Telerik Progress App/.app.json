@@ -29,9 +29,34 @@
         }
       ],
       "name": "dataListView",
-      "title": "Data List",
+      "title": "Bills",
       "addToNavigation": true,
       "icon": "organize"
+    },
+    {
+      "type": "view",
+      "components": [
+        {
+          "type": "about",
+          "name": "aboutViewModel",
+          "appName": "Telerik App",
+          "appVersion": "Version 1",
+          "appDescription": "App Created in Telerik Training",
+          "contactButton": true,
+          "contactLabel": "Contact us",
+          "contactMail": "laimonas.mikelionis@gmail.com",
+          "facebookButton": true,
+          "facebookLabel": "Like us on Facebook",
+          "facebookLink": "https://www.facebook.com/Telerik",
+          "twitterButton": true,
+          "twitterLabel": "Follow us on Twitter",
+          "twitterLink": "https://twitter.com/telerik"
+        }
+      ],
+      "name": "aboutView",
+      "title": "About",
+      "addToNavigation": true,
+      "icon": "info"
     }
   ],
   "dataProviders": [
@@ -46,7 +71,8 @@
     }
   ],
   "name": "kendoUiMobileApp",
-  "navigation": "drawer",
+  "navigation": "tabstrip",
   "view": "home",
+  "transition": "fade",
   "skin": "flat"
 }
