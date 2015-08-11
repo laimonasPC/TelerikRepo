@@ -47,6 +47,7 @@
   ],
   "CorePlugins": [
     "org.apache.cordova.camera",
+    "org.apache.cordova.globalization",
     "org.apache.cordova.network-information"
   ],
   "iOSDeploymentTarget": "8.0"
