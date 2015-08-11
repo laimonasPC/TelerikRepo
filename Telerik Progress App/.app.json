@@ -5,7 +5,7 @@
       "type": "view",
       "components": [],
       "name": "home",
-      "title": "Home",
+      "title": "Master page",
       "addToNavigation": true,
       "icon": "home"
     },
@@ -19,11 +19,11 @@
           "collection": "dbo_Bills",
           "iconField": false,
           "headerField": "Description",
-          "subHeaderField": "Amount",
+          "subHeaderField": "AccountID",
           "masterDetails": true,
           "detailHeaderField": "Amount",
-          "detailSubHeaderField": "Description",
-          "detailDescriptionField": "Status",
+          "detailSubHeaderField": "EndDate",
+          "detailDescriptionField": "StartDate",
           "pullToRefresh": true,
           "endlessScroll": false
         }
@@ -74,5 +74,5 @@
   "navigation": "tabstrip",
   "view": "home",
   "transition": "fade",
-  "skin": "flat"
+  "skin": "native"
 }

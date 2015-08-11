@@ -21,8 +21,8 @@ app.dataListView = kendo.observable({
                             field: 'Description',
                             defaultValue: ''
                         },
-                        'Amount': {
-                            field: 'Amount',
+                        'AccountID': {
+                            field: 'AccountID',
                             defaultValue: ''
                         },
                     }
